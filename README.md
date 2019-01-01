@@ -1,119 +1,110 @@
-   
-# Ohtred
+# The sharpest cat on Discord.
+##### By Jeremy Yang
 
-#### Ohtred was born out of my experience moderating very active Discord servers.
-#### Initially, she was designed to prevent drama and give the moderators a little peace of mind.
-#### But her scope has expanded, thanks to the testing and feedback from her dedicated users.
-#### As long as she continues to receive feedback, I will continue to update her.
-
-## Democracy! ✋
-* Propose ideas to the #mod-vote channel with a simple command  
-* Upon reaching the upvote threshold it is announced as a "Success"
-* Upon reaching the downvote threshold it is announced as a "Failure"
-* Suggestions in #feedback (for non-mods) that reach the upvote threshold progress to #mod-vote as "petitions"  
-* From my experience, even combative mods will accept a result that is automatically posted
-* Due process means everything - hold the mod team accountable
+## ⚖️ Judge
+* Propose ideas to the #mod-vote tribunal with a simple command  
+* They either pass or fail, which can represent anything you want
+* Configure custom pass/fail thresholds
+* Suggestions in #feedback that are popular enough progress as "petitions"  
+* Due process means everything - whiskers holds the mod team accountable
  
-## Damage Control 🔥
-* Messages with X :report: reactions are automatically deleted and archived in #report-log (with image retention)
-* Auto-mute reported users for a customizable number of seconds
-* Auto-moderate channels alongside customizable metrics such as NSFW or toxicity
-* The intelligent automod learns through Google's PerspectiveAPI
-* Turn on one of two lockdown modes to auto-kick or auto-ban raiders
-* Enable autorole, and optionally require newly created accounts to input a verification password (anti-alt)
+## 📰 Reporter
+* React to an inappropriate message with enough :report: reactions, and Whiskers deletes it
+* Then he archives it in #report-log (with image retention)
+* Whiskers can also auto-mute reported users for a customizable amount of time
+* Auto-moderate channels, alongside metrics such as NSFW or toxicity (and many more)
+* He is constantly learning through Google's PerspectiveAPI
+
+## 💪 Bouncer 
+* You can tell Whiskers to auto-kick or auto-ban raiders
+* Enable autorole, and optionally require joining accounts to connect an external account, preventing alts
+* Allow mods to bypass anti-alt measures with a moderator password
   
-## The Embassy (NEW!) 🌿
-* The embassy is a chat channel shared between two servers.
-* Once you set up the embassy channel, set its description to the ID of the foreign server
-* If both server embassy descriptions are set to the other server's ID...
-* ...Then any messages sent on either embassy will be sent to the other one.
+## 🌿 Diplomat
+* Interserver channels - Whiskers will help you operate EMBASSIES.
+* Simple and intuitive to set up
+* Messages sent on either embassy will be sent to the other one.
 * Use it for diplomacy, inter-server events, or even just plain fun!
-* It is secure, as the IDs have to be mutually set
   
-## Utility 🔎
-* Auto-display the number of online users with a simple 🔺 prefix on a channel or category name  
-* Analyze the chance of an announcement to be negatively percieved before sending it 
-* Translate messages in dozens of languages from Welsh to Arabic to Yiddish to Tagalog
-* Give distinguished users a command to ping mods with a canned alert
-* Uses Google Cloud Vision to analyze the contents of an image, including grabbing text from images
-* Want to find out what that strange image is? With a simple command, do a Google reverse-image search
+## 🔎 Detective
+* Whiskers can tell you the chance of an announcement to be negatively percieved before sending it 
+* He can analyze the contents of images, and grab text from them
+* What's that? In the blink of an eye, Whiskers' can uncannily identify images
+* Sniff out plagarism with the image locate command, or find similar images with the mirror command
 
-## And More 📋
-* Generate meme captions for images
+## And More ❗
 * Kick, ban, unban, role, and timed mute commands 
-* Custom prefixes!
-* A super sexy bot page
-* A support server manned by my bro LunarShadows
+* Minimalistic userinfo and roleinfo commands
+* Auto-display the number of online users with a simple 🔺 category prefix
+* Whiskers is multilingual - translate from Welsh to Arabic to Yiddish to Tagalog
+* Custom prefixes
 
-## Coming soon!
-- Google Cloud Vision anti-nsfw image filtering
-- natural.js machine-learning word censorship
-- Auto-generated external IP verification pages for banned users making an appeal
-- Auto-translator-to-English in channels where it is enabled
+...
+##### NOTE: Here's an invite without admin: https://discordapp.com/oauth2/authorize?client_id=528809041032511498&permissions=805686464&scope=bot
 
-
-## Commands
+## Commands 
 ```
 Anyone
 
-    @Ohtred analyze [metric] [text] to predict if a message follows the metric (15 metrics to choose from)
+    @whiskers analyze [metric] [text] to predict if a message follows the metric (15 metrics to choose from)
     
-    @Ohtred translate [language] [text] to translate a message to the specified language
+    @whiskers translate [language] [text] to translate a message to the specified language
     
-    @Ohtred meme [url] [caption] to auto-scale and generate a fresh meme
+    @whiskers meme [url] [top text|bottom text] to auto-scale and generate a fresh meme
     
-    @Ohtred doge [text] to generate dogeified text
+    @whiskers doge [text] to generate dogeified text
 	
-    @Ohtred describe [image url] to analyze and label the contents of an image
+    @whiskers describe [image url] to analyze and label the contents of an image
     
-    @Ohtred identify [image url] to guess what an image represents (reverse-search)
+    @whiskers identify [image url] to guess what an image represents (reverse-search)
     
-    @Ohtred read [image url] grabs text from an image and posts it in a copypastable format
+    @whiskers read [image url] grabs text from an image and posts it in a copypastable format
     
 Approved Roles
 
-    @Ohtred propose [text] to send a proposal to the modvoting channel
+    @whiskers propose [text] to send a proposal to the modvoting channel (constant voting threshold)
     
-    @Ohtred alert [severity 1-4] to alert mods to an altercation (my server bans pinging mods but allows approved users to alert)
+    @whiskers motion [threshold] [description] - a proposal with a custom threshold
+    
+    @whiskers alert [severity 1-4] to alert mods to an altercation (my server bans pinging mods but allows approved users to alert)
 
 Moderators
 
-    @Ohtred mute/unmute/ban/unban/kick/role/warn [user/role]
+    @whiskers mute/unmute/ban/unban/kick/role/warn [user/role]
     
-    @Ohtred autorole [role] - sets up an autorole, typically for verification
+    @whiskers autorole [role] - sets up an autorole, typically for verification
     
-    @Ohtred wash [1-100] - purges the specified number of messages
+    @whiskers wash [1-100] - purges the specified number of messages
 
 Admin Only
 
-    NEW! @Ohtred lockdown [0-2] - locks down the server (0: none, 1: autokick, 2: autoban)
+    @whiskers lockdown [0-2] - locks down the server (0: none, 1: autokick, 2: autoban)
     
-    NEW! @Ohtred embassy [channel] sets up an embassy in a channel that can be connected to another server
+    @whiskers embassy [channel] sets up an embassy in a channel that can be connected to another server
+    
+    @whiskers verification [0-1] - sets the verification mode
 
-    NEW! @Ohtred motion [threshold] [description] - an admin only command that sends a proposal with a custom vote threshold
-
-    @Ohtred prefix [prefix] self explanatory
+    @whiskers prefix [prefix] self explanatory
    
-    @Ohtred channel [modvoting|modannounce|modactivity|feedback|reportlog] [channel] to link one of the features to a channel
+    @whiskers channel [modvoting|modannounce|modactivity|feedback|reportlog] [channel] to link one of the features to a channel
     
-    @Ohtred emote [upvote|downvote|report] [emote_name] to set the name of the emote to its corresponding mechanic
+    @whiskers emote [upvote|downvote|report] [emote_name] to set the name of the emote to its corresponding mechanic
     
-    @Ohtred permit [rolename] to permit a rolename to interact with me
+    @whiskers permit [rolename] to permit a rolename to interact with me
     
-    @Ohtred unpermit [rolename] to remove a role from interacting with me
+    @whiskers unpermit [rolename] to remove a role from interacting with me
     
-    @Ohtred reportable [channel] to add a channel to the list where messages are reportable
+    @whiskers reportable [channel] to add a channel to the list where messages are reportable
 
-    @Ohtred unreportable [channel] to remove a channel from the reportable list
+    @whiskers config [mod_upvote|mod_downvote|petition_upvote|report_vote] [count] to set a voting threshold
 
-    @Ohtred config [mod_upvote|mod_downvote|petition_upvote|report_vote] [count] to set a voting threshold
-
-    @Ohtred counter [interval 1-50] to set the change in # of users online in order to update the counter
+    @whiskers counter [interval 1-50] to set the change in # of users online in order to update the counter
     
-    @Ohtred report_time [number 10+] to set the amount of time a user gets muted for a report (default 60s)
+    @whiskers report_time [number 10+] to set the amount of time a user gets muted for a report (default 60s)
+
+And more...
 ```
 
-[![Discord Bots](https://discordbots.org/api/widget/511672691028131872.svg?usernamecolor=FFFFFF&topcolor=000000&datacolor=FFFFFF&middlecolor=000000&highlightcolor=000000&labelcolor=ff9c00)](https://discordbots.org/bot/511672691028131872)
+[![Discord Bots](https://discordbots.org/api/widget/528809041032511498.svg?usernamecolor=FFFFFF&topcolor=000000&datacolor=FFFFFF&middlecolor=000000&highlightcolor=000000&labelcolor=ff9c00)](https://discordbots.org/bot/511672691028131872)
 
-##### Special thanks to [Yandex](http://translate.yandex.com/) and [PerspectiveAPI](https://perspectiveapi.com) for their fantastic APIs 🍻
-##### Thanks to the Discord servers of /r/okbuddyretard, /r/bruhmoment, /r/comedyheaven, and /r/bonehurtingjuice for testing and using my bot!
+##### Thanks to [Yandex](http://translate.yandex.com/) and [PerspectiveAPI](https://perspectiveapi.com) for their fantastic APIs
