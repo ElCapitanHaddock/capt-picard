@@ -1,5 +1,6 @@
 # The sharpest cat on Discord.
 ##### By Jeremy Yang
+##### Captain Picard is the name of the project, Whiskers is its current live iteration
 
 ## ⚖️ Judge
 * Propose ideas to the #mod-vote tribunal with a simple command  
